@@ -1,0 +1,19 @@
+ {% load static %}
+ <!-- brand-area -->
+  <div class="brand__area-two">
+    <div class="container">
+        <div class="swiper-container brand-active">
+            <div class="swiper-wrapper">
+                {% for item in brands %}
+                <div class="swiper-slide">
+                    <div class="brand-item">
+                        <img src="{{ item.image.url }}" alt="">
+                    </div>
+                </div>
+                {% endfor %}
+             
+            </div>
+        </div>
+    </div>
+</div>
+<!-- brand-area-end -->

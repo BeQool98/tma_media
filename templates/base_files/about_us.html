@@ -1,0 +1,37 @@
+{% load static %}
+<section class="about__area-two about__bg" data-background="{% static 'assets/img/bg/about_bg.jpg' %}">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="about__img-wrap-two">
+                    <img src="{% static 'assets/img/images/h2_about_img.jpg'%} " alt="">
+                   
+                
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about__content-two">
+                    <div class="section-title mb-20 tg-heading-subheading animation-style3">
+                        <span class="sub-title">{{ about.top_header }}</span>
+                        <h3 class="title tg-element-title">{{ about.bold_description }}</h3>
+                    </div>
+                    <p>{{ about.down_description }}</p>
+
+                    <div class="about-bottom">
+                        <div class="author-wrap">
+                            <div class="thumb">
+                                <img src="{{ about.image.url }}" alt="">
+                            </div>
+                            <div class="content">
+                                
+                                <h4 class="title">{{ about.ceo_name }} <span>,{{ about.ceo_position }}</span></h4>
+                            </div>
+                        </div>
+                        <a href="{% url 'about' %}" class="btn btn-two">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</section>
